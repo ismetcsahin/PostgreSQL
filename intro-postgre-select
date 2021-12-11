@@ -1,0 +1,19 @@
+-- w3schools.com'da SQL Tutorials'lar var, oradan çalışabilirsiniz.
+-- Ne istiyorsak onu düşünmeliyiz öncelikle ondan sonra query'i yazmalıyız.
+-- SELECT column1 FROM table1;
+-- Verileri almak için kullanıyoruz SELECT anahtar kelimesini.
+
+SELECT title FROM film;
+
+-- İki sütunu almak, film tablosundan
+-- ";" normalde birden fazla SQL sorgusunu ayırmamızı sağlar
+-- Farklı veritabanı sistemlerinde ";" kullanma zorunluluğu var
+-- PostgreSQL'de tek sorgu da ";" kullanma zorunluluğu yok
+SELECT title, description FROM film;
+
+-- Tüm sütunları çağırmak istersek
+SELECT * FROM film;
+
+-- Actor tablosundan adı ve soyismini alıyoruz
+SELECT first_name, last_name from actor;
+
